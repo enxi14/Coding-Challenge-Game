@@ -4,8 +4,7 @@ body {
     text-align: center;
 }
 
-.cartoon-container {
-    position: relative;
+.game-container {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
@@ -15,13 +14,32 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cartoon {
-    max-width: 100%;
-    height: auto;
+h1 {
+    font-size: 24px;
+    color: #333;
 }
 
-.caption {
-    margin-top: 10px;
+p {
     font-size: 18px;
-    color: #333;
+    color: #666;
+}
+
+.bugs {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bug {
+    width: 50px;
+    height: 50px;
+    background-color: #ff5733;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.bug:hover {
+    transform: scale(1.1);
 }
