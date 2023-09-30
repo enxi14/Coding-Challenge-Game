@@ -1,5 +1,5 @@
 const bugsContainer = document.getElementById('bugs');
-const bugCount = 10; // Number of bugs
+const bugCount = 20; 
 
 for (let i = 0; i < bugCount; i++) {
     const bug = document.createElement('div');
@@ -17,7 +17,7 @@ function checkWinCondition() {
     if (remainingBugs === 0) {
         setTimeout(() => {
             alert('Congratulations! You debugged all the bugs!');
-            location.reload(); // Reload the game
+            location.reload(); 
         }, 500);
     }
 }
